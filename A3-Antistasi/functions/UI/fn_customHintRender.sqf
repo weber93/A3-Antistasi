@@ -26,12 +26,12 @@ private _filename = "fn_customHintRender.sqf";
 
 if (!hasInterface || !A3A_customHintEnable) exitWith {false;}; // Disabled for server & HC.
 
-if (count A3A_customHint_MSGs isEqualTo 0) then {
+if (A3A_customHint_MSGs isEqualTo []) then {
     hintSilent "";
 } else{
     private _autoDismiss = 15;  // Number of seconds for message lifetime  // Constant Value
     if (serverTime - A3A_customHint_LastMSG > _autoDismiss) exitWith {
-        [] call A3A_fnc_customHintDismiss;
+        [true] call A3A_fnc_customHintDismiss;
     };
     private _alphaHex = [(((_autoDismiss + A3A_customHint_LastMSG - serverTime) min (_autoDismiss-5)) / (_autoDismiss-5)) ] call A3A_fnc_shader_ratioToHex;
     private _dismissKey = actionKeysNames ["User12",1];
