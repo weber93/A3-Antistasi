@@ -329,7 +329,7 @@ class A3A
         class logistics_initNodes {};
     };
 
-    class LogisticsFunctions 
+    class LogisticsFunctions
     {
         file = "functions\Logistics\functions";
         class logistics_addAction {};
@@ -345,6 +345,7 @@ class A3A
         class logistics_refreshVehicleLoad {};
         class logistics_removeWeaponAction {};
         class logistics_toggleAceActions {};
+		class logistics_toggleLock {};
         class logistics_unload {};
     };
 
