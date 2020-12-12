@@ -47,7 +47,7 @@ class Params
           title = "Enable Teamkill Punish";
           values[] = {1,0};
           texts[] = {"Yes","No"};
-          default = 1;
+          default = 0;
      };
      class mRadius
      {
@@ -60,7 +60,7 @@ class Params
           title = "Allow PvP Slots";
           values[] = {1,0};
           texts[] = {"Yes","No"};
-          default = 1;
+          default = 0;
      };
      class pMarkers
      {
@@ -80,7 +80,7 @@ class Params
      {
           title = "Number of the same item required to unlock";
           values[] = {15,25,40};
-          default = 25;
+          default = 15;
      };
      class memberOnlyMagLimit
      {
@@ -121,14 +121,14 @@ class Params
           title = "Max personal garage slots";
           texts[] = {"Unlimited", "2", "5", "10"};
           values[] = {0,2,5,10};
-          default = 2;
+          default = 5;
      };
      class allowFT
      {
           title = "Fast Travel Targets Allowed";
           values[] = {0,1};
           texts[] = {"Any friendly position","Only Airports & HQ"};
-          default = 1;
+          default = 0;
      };
      class napalmEnabled
      {
@@ -156,14 +156,14 @@ class Params
           title = "Should Guided Launchers become unlocked?";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class allowUnlockedExplosives
      {
           title = "Should Explosives become unlocked?";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class startWithLongRangeRadio
      {
@@ -180,27 +180,6 @@ class Params
           default = 33;
      };
      class Spacer10
-     {
-          title = "";
-          values[] = {""};
-          texts[] = {""};
-          default = "";
-     };
-     class EnableLootToCrate
-     {
-          title = "Enable Loot to crate";
-          values[] = {0, 1};
-          texts[] = {"Disabled", "Enabled"};
-          default = 1;
-     };
-     class LTCLootUnlocked
-     {
-          title = "Loot to crate: transfers unlocked items";
-          values[] = {0, 1};
-          texts[] = {"Disabled", "Enabled"};
-          default = 0;
-     };
-     class Spacer11
      {
           title = "";
           values[] = {""};
